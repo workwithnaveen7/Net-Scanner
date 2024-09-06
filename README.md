@@ -24,7 +24,9 @@ Net-Scanner is a user-friendly web-based network scanning tool that leverages Nm
 
 3. **Enter the target URL and click "Start Scan".** The application will perform a scan and display the results on a new page.
 
-
+![netscanner_image](https://github.com/user-attachments/assets/d60c7a8c-58fb-4b2d-9d16-a22886c271ff)
 
 After scanning a target, you will see a detailed report showing the open ports and services. Here is a sample report:
+
+![netscanner_report](https://github.com/user-attachments/assets/aeda72f3-17f3-4e67-adfb-09baa813400d)
 
