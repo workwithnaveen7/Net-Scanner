@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Net Scanner Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .host-address {
+            font-weight: bold;
+        }
+        .port-info {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nmap Scan Report</h1>
+    {% if hosts %}
+        {% for host in hosts %}
+            <div class="host-address">Host: {{ host.address }}</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Port</th>
+                        <th>Status</th>
+                        <th>Service</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for port in host.ports %}
+                        <tr>
+                            <td>{{ port.portid }}/{{ port.protocol }}</td>
+                            <td>{{ port.state }}</td>
+                            <td>{{ port.service }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% endfor %}
+    {% else %}
+        <p>No hosts found or scan failed.</p>
+    {% endif %}
+</body>
+</html>

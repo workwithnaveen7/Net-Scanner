@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Net Scanner Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .host-address {
+            font-weight: bold;
+        }
+        .port-info {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nmap Scan Report</h1>
+    
+        
+            <div class="host-address">Host: 45.33.32.156</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Port</th>
+                        <th>Status</th>
+                        <th>Service</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                        <tr>
+                            <td>22/tcp</td>
+                            <td>open</td>
+                            <td>ssh</td>
+                        </tr>
+                    
+                        <tr>
+                            <td>25/tcp</td>
+                            <td>filtered</td>
+                            <td>smtp</td>
+                        </tr>
+                    
+                        <tr>
+                            <td>80/tcp</td>
+                            <td>open</td>
+                            <td>http</td>
+                        </tr>
+                    
+                        <tr>
+                            <td>135/tcp</td>
+                            <td>filtered</td>
+                            <td>msrpc</td>
+                        </tr>
+                    
+                        <tr>
+                            <td>139/tcp</td>
+                            <td>filtered</td>
+                            <td>netbios-ssn</td>
+                        </tr>
+                    
+                        <tr>
+                            <td>445/tcp</td>
+                            <td>filtered</td>
+                            <td>microsoft-ds</td>
+                        </tr>
+                    
+                        <tr>
+                            <td>9929/tcp</td>
+                            <td>open</td>
+                            <td>nping-echo</td>
+                        </tr>
+                    
+                        <tr>
+                            <td>31337/tcp</td>
+                            <td>open</td>
+                            <td>Elite</td>
+                        </tr>
+                    
+                </tbody>
+            </table>
+        
+    
+</body>
+</html>
